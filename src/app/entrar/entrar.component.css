@@ -1,0 +1,16 @@
+#imglogin {
+    background-image: url('https://br.lexlatin.com/sites/default/files/2020-12/agro.jpg');
+
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.fontP {
+    font-size: 12px;
+}
+h1 {
+    font-size: 45px;
+    font-family: 'Times New Roman', Times, serif;
+}
