@@ -1,0 +1,17 @@
+#img-bg {
+    background-image: url("https://festvalcascavel.com.br/img/news/alimentos_organicos_e_risco_de_cancer_5de6647c51cfc.jpg");
+
+    min-height: 100vh;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+  }
+
+  #corCadastro {
+    color: #8CAC7B;
+  }
+
+  #espacoBotao {
+    margin: 10px;
+  }
