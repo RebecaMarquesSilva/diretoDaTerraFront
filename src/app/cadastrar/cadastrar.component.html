@@ -14,7 +14,7 @@
               class="form-control"
               name="usuario"
               placeholder="Seu usuário"
-              id="usuario"
+              id="usuario" [(ngModel)]="usuario.usuario"
             />
           </div>
 
@@ -37,6 +37,7 @@
               name="foto"
               placeholder="Link da sua foto"
               id="foto"
+              [(ngModel)]="usuario.foto"
             />
           </div>
 
@@ -48,6 +49,7 @@
               name="senha"
               id="senha"
               placeholder="Sua senha"
+              (input)='confirmSenha($event)'
             />
           </div>
 
@@ -59,6 +61,7 @@
               name="confirmarSenha"
               id="confirmarSenha"
               placeholder="Confirme sua senha"
+              [(ngModel)]='usuario.senha' 
             />
           </div>
 
@@ -73,7 +76,7 @@
 
           <div class="d-flex justify-content-center mt-3">
             <button type="submit" class="btn btn-danger" id="espacoBotao" routerLink="/entrar">Cancelar</button>
-            <button type="submit" class="btn btn-success" id="espacoBotao">Cadastrar</button>
+            <button type="submit" class="btn btn-success" id="espacoBotao" (click)="cadastrar()"></button>>Cadastrar</button>
           </div>
         </div>
       </div>
