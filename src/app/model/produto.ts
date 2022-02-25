@@ -1,5 +1,6 @@
 import { Categoria } from "./categoria";
-import { Usuario } from "./usuario";
+import { Usuario } from "./Usuario";
+
 
 export class Produto{
   public id: number;
