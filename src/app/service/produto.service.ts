@@ -25,5 +25,4 @@ export class ProdutoService {
   postProduto(produto: Produto): Observable<Produto>{
     return this.http.post<Produto>('http://diretodaterra.herokuapp.com/produto', produto, this.token)
   }
-  
 }
