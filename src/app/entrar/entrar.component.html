@@ -6,14 +6,14 @@
                     <h1 class="text-center">Entrar</h1>
                     <div class="form">
                         <div class="form-group">
-                            <label for="usuario">Usuário</label>
-                            <input [(ngModel)]="userLogin.usuario" class="form-control" type="text" name="usuario" id="usuario" placeholder="Insira seu usuario...">
+                            <label for="usuario">Email</label>
+                            <input [(ngModel)]="userLogin.email" class="form-control" type="text" name="usuario" id="usuario" placeholder="Insira seu Email...">
                         </div>
                         <div class="form-group">
-                            <label [(ngModel)]="userLogin.email"for="usuario">E-mail</label>
-                            <input class="form-control" type="email" name="email" id="email" placeholder="Insira seu e-mail...">
+                            <label for="usuario">Senha</label>
+                            <input [(ngModel)]="userLogin.senha" class="form-control" type="password" name="senha" id="senha" placeholder="Insira sua senha...">
                             <div class="d-flex justify-content-center">
-                                <button type="button" class="btn btn-success btn-rounded my-4" data-mdb-ripple-color="dark">Entrar</button>
+                                <button type="button" class="btn btn-success btn-rounded my-4" data-mdb-ripple-color="dark" (click)="entrar()">Entrar</button>
                             </div>
                             <a href="#"><p class="text-center fontP">Esqueceu sua senha?</p></a>
                         </div>
