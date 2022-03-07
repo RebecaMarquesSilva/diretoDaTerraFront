@@ -23,7 +23,7 @@ import { CategoriaComponent } from './categoria/categoria.component';
     EntrarComponent,
     ContatoComponent,
     InicioComponent,
-    CategoriaComponent
+    CategoriaComponent,
   ],
   imports: [
     BrowserModule,
