@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { Categoria } from '../model/categoria';
+import { CategoriaService } from '../service/categoria.service';
 
 @Component({
   selector: 'app-categoria',
@@ -7,7 +10,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CategoriaComponent implements OnInit {
 
-  constructor() { }
+  categoria: Categoria = new Categoria()
+  listaCategoria: Categoria[]
+
+  constructor(
+    private router: Router,
+    private categoriaService: CategoriaService
+
+  ) { }
+
 
   ngOnInit(): void {
   }
