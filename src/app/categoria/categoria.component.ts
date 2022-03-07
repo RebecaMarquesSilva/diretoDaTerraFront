@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { environment } from 'src/environments/environment.prod';
+import { Categoria } from '../model/categoria';
 
 @Component({
   selector: 'app-categoria',
@@ -8,6 +9,9 @@ import { environment } from 'src/environments/environment.prod';
   styleUrls: ['./categoria.component.css']
 })
 export class CategoriaComponent implements OnInit {
+
+  categoria: Categoria = new Categoria()
+  listaCategoria: Categoria[]
 
   constructor(
     private router: Router
