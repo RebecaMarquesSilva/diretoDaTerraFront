@@ -13,6 +13,9 @@ import { EntrarComponent } from './entrar/entrar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { CategoriaComponent } from './categoria/categoria.component';
+import { DeleteProdutoComponent } from './delete/delete-produto/delete-produto.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { CategoriaComponent } from './categoria/categoria.component';
     EntrarComponent,
     ContatoComponent,
     InicioComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    DeleteProdutoComponent,
+    CategoriaDeleteComponent,
+    ProdutoDeleteComponent
   ],
   imports: [
     BrowserModule,

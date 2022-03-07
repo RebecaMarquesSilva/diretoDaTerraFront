@@ -21,6 +21,13 @@ export class CategoriaService {
 
   postCategoria(categoria: Categoria): Observable<Categoria>{
     return this.http.post<Categoria>('http://diretodaterra.herokuapp.com/categoria', categoria, this.token)
+  }
 
+  putCategoria(categoria: Categoria): Observable<Categoria>{
+    return this.http.put<Categoria>('http://diretodaterra.herokuapp.com/categoria', categoria, this.token)
+  }
+
+  deleteCategoria(id: number) {
+    return this.http.delete(`http://diretodaterra.herokuapp.com/categoria/${id}`, this.token)
   }
 }
