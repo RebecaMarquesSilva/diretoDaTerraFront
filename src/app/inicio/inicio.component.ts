@@ -34,20 +34,13 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
-    if(environment.token == '') {
-      this.router.navigate(['/entrar'])
-    }
 
   //   this.authService.refreshToken()
-    this.getAllCategoria()
+    
     this.getAllProduto()
   }
 
-  getAllCategoria() {
-    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
-      this.listaCategorias = resp
-    })
-  }
+  
 
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
