@@ -15,7 +15,12 @@ const routes: Routes = [
   {path: 'entrar', component: EntrarComponent},
   {path: 'cadastrar', component: CadastrarComponent},
   {path: 'contato', component: ContatoComponent},
+
+
+
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
+
+
   {path: 'produto', component: ProdutoComponent},
   {path: 'categoria', component: CategoriaComponent}
   // {path: 'categoria-edit/:id', component: CategoriaEditComponent},
