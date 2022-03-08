@@ -18,8 +18,13 @@ export class ProdutoService {
   }
 
   getAllProduto(): Observable<Produto[]>{
-    return this.http.get<Produto[]>('https://diretodaterra.herokuapp.com/produto', this.token)
 
+    return this.http.get<Produto[]>('https://diretodaterra.herokuapp.com/produto/all', this.token)
+  }
+
+
+  getByIdProduto(id: number): Observable<Produto> {
+    return this.http.get<Produto>(`https://diretodaterra.herokuapp.com/produto/${id}`, this.token)
   }
 
   postProduto(produto: Produto): Observable<Produto>{
