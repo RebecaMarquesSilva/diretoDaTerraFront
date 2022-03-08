@@ -27,7 +27,7 @@
           <a class="nav-link" routerLink="/cadastrar">Cadastre-se</a>
         </li>
       </ul>
-      <ul class="navbar-nav ml-auto d-flex align-items-center">
+      <ul class="navbar-nav ml-auto d-flex align-items-center" *ngIf="auth.logado()">
         <li class="nav-item pl-3">
           <a (click)="sair()" class="m-0 font-weight-bold text-light fs16">Sair
             <i class="fa fa-sign-out" aria-hidden="true"></i></a>
