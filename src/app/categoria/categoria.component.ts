@@ -21,7 +21,7 @@ export class CategoriaComponent implements OnInit {
 
   ngOnInit() {
     window.scroll(0,0);
-    
+
     if(environment.token == '') {
       this.router.navigate(['/entrar'])
     }
@@ -32,6 +32,7 @@ export class CategoriaComponent implements OnInit {
   findAllCategorias(){
     this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
       this.listaCategoria = resp
+      console.log(this.categoria)
     })
   }
 

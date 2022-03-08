@@ -35,11 +35,11 @@ export class InicioComponent implements OnInit {
     window.scroll(0,0)
 
   //   this.authService.refreshToken()
-    
+
     this.getAllProduto()
   }
 
-  
+
 
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
