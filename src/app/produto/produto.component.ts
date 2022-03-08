@@ -8,11 +8,11 @@ import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-produto',
+  templateUrl: './produto.component.html',
+  styleUrls: ['./produto.component.css']
 })
-export class InicioComponent implements OnInit {
+export class ProdutoComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaProdutos: Produto[]
@@ -20,9 +20,6 @@ export class InicioComponent implements OnInit {
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
   idCategoria: number
-
-  //user: User = new User()
-  idUser = environment.id
 
   constructor(
     private router: Router,
@@ -34,13 +31,13 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
+    if(environment.token == '') {
+      this.router.navigate(['/entrar'])
+    }
 
-
-    
+  //   this.authService.refreshToken()
     this.getAllProduto()
   }
-
-  
 
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
@@ -51,6 +48,7 @@ export class InicioComponent implements OnInit {
   getAllProduto() {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
+      console.log(this.listaProdutos)
     })
   }
 
@@ -63,6 +61,7 @@ export class InicioComponent implements OnInit {
 
     this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
+      alert('Postagem realizada com sucesso!')
       this.produto = new Produto()
       this.getAllProduto()
     })

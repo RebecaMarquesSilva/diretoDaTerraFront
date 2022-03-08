@@ -16,15 +16,16 @@ export class CategoriaService {
   }
 
   getAllCategoria(): Observable<Categoria[]> {
-    return this.http.get<Categoria[]>('http://diretodaterra.herokuapp.com/categoria', this.token)
-  }
-
-  postCategoria(categoria: Categoria): Observable<Categoria>{
-    return this.http.post<Categoria>('http://diretodaterra.herokuapp.com/categoria', categoria, this.token)
+    return this.http.get<Categoria[]>('https://diretodaterra.herokuapp.com/categoria', this.token)
 
   }
 
-  putCategoria(categoria: Categoria): Observable<Categoria>{
-    return this.http.put<Categoria>('http://diretodaterra.herokuapp.com/categoria', categoria, this.token)
+  getByIdCategoria(id: number): Observable<Categoria> {
+    return this.http.get<Categoria>(`https://diretodaterra.herokuapp.com/categoria/${id}`, this.token)
+
   }
+
+
+
+
 }
