@@ -34,20 +34,18 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
-    if(environment.token == '') {
-      this.router.navigate(['/entrar'])
-    }
-
+<<<<<<< HEAD
   //   this.authService.refreshToken()
     this.getAllCategoria()
+=======
+
+
+    
+>>>>>>> 5327811ec2172c5721286e0bf3986d93e6a66890
     this.getAllProduto()
   }
 
-  getAllCategoria() {
-    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
-      this.listaCategorias = resp
-    })
-  }
+  
 
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
@@ -70,7 +68,6 @@ export class InicioComponent implements OnInit {
 
     this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
-      alert('Postagem realizada com sucesso!')
       this.produto = new Produto()
       this.getAllProduto()
     })
