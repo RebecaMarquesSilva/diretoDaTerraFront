@@ -8,11 +8,11 @@ import { CategoriaService } from '../service/categoria.service';
 import { ProdutoService } from '../service/produto.service';
 
 @Component({
-  selector: 'app-inicio',
-  templateUrl: './inicio.component.html',
-  styleUrls: ['./inicio.component.css']
+  selector: 'app-produto',
+  templateUrl: './produto.component.html',
+  styleUrls: ['./produto.component.css']
 })
-export class InicioComponent implements OnInit {
+export class ProdutoComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaProdutos: Produto[]
@@ -20,9 +20,6 @@ export class InicioComponent implements OnInit {
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
   idCategoria: number
-
-  //user: User = new User()
-  idUser = environment.id
 
   constructor(
     private router: Router,
@@ -39,14 +36,7 @@ export class InicioComponent implements OnInit {
     }
 
   //   this.authService.refreshToken()
-    this.getAllCategoria()
     this.getAllProduto()
-  }
-
-  getAllCategoria() {
-    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
-      this.listaCategorias = resp
-    })
   }
 
   findByIdCategoria() {
@@ -58,6 +48,7 @@ export class InicioComponent implements OnInit {
   getAllProduto() {
     this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
       this.listaProdutos = resp
+      console.log(this.listaProdutos)
     })
   }
 
