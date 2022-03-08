@@ -35,7 +35,7 @@ export class InicioComponent implements OnInit {
     window.scroll(0,0)
 
   //   this.authService.refreshToken()
-    this.findByIdCategoria()
+
     this.getAllProduto()
   }
 
