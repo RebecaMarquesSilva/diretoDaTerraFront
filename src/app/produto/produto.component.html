@@ -1,33 +1,74 @@
+<div class="container-fluid p-0 m-0" id="cor">
+  <ul class="nav d-flex justify-content-center mb-4">
+    <li class="nav-item">
+      <a class="nav-link" href="">Cadastre uma nova categoria</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link">Cadastre um novo produto</a>
+      <!-- <button class="data-toggle='modal' data-target='#novoProduto'">teste</button> -->
+    </li>
+  </ul>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-12">
+      <h1 class="text-center">Conheça nossos produtos</h1>
+    </div>
+  </div>
+
+
+<!-- nav-tab -->
+<ul class="nav nav-tabs d-flex justify-content-center my-5" >
+  <li class="nav-item">
+    <a class="nav-link active text-secondary font-weight-bold" id="nav-todosProdutos-tab" data-toggle="tab" href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os produtos</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false">Frutas</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link text-secondary font-weight-bold" >Verduras</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link text-secondary font-weight-bold" >Leguminosas</a>
+  </li>
+</ul>
+<!-- /nav-tab -->
+
+
+<!-- cards Produtos -->
 <div class="container">
-  <div class="row d-flex justify-content-center mt-3 mb-5">
-    <div class="col-md-6">
-      <button class="btn btn-success mr-4" data-toggle="modal" data-target="#novoProduto">Novo Produto</button>
-      <a class="btn btn-outline-success" href="#produtos">Ver Produtos</a>
+
+  <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
+
+
+  <div class="row row-cols-1 row-cols-md-4">
+    <div class="col mb-4">
+      <div class="card *ngFor='let produto of listaProdutos'">
+        <img src="{{produto.foto}}" class="card-img-top" alt="img do produto">
+        <div class="card-body text-center">
+          <h5 class="card-title">{{produto.nome}}</h5>
+          <p class="card-text">{{produto.categoria}}</p>
+          <p class="card-text">{{produto.preco}}</p>
+          <a href="" class="btn btn-primary">Comprar</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
+</div>
+<!-- /cards Produtos -->
 
-<!-- nav-tab -->
 
-<ul class="nav nav-tabs d-flex justify-content-center my-5">
-  <li class="nav-item">
-    <a class="nav-link active" href="">Todos os produtos</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" (click)="getAllProduto()">Frutas</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="">Verduras</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="">Leguminosas</a>
-  </li>
-</ul>
 
-<!-- /nav-tab -->
 
-<!-- Modal -->
+
+
+
+<!-- Modal
 <div class="modal fade" id="novoProduto" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -63,3 +104,5 @@
     </div>
   </div>
 </div>
+Modal-->
+
