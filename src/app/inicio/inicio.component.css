@@ -1,0 +1,38 @@
+.color
+{
+    background-color: #8cac7b ;
+  }
+
+  .links
+  {
+    padding-left:0;
+    list-style:none
+  }
+  .links li
+  {
+    display:block
+  }
+  .links a
+  {
+    color:#f8f8f8
+  }
+  .links a:active,.links a:focus,.links a:hover
+  {
+    color:#737373;
+    text-decoration:none;
+  }
+  .links.inline li
+  {
+    display:inline-block
+  }
+ 
+  
+  
+  
+     
+   
+  
+
+  
+ 
+  

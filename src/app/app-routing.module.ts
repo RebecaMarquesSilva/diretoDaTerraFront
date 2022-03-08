@@ -10,10 +10,7 @@ import { ProdutoComponent } from './produto/produto.component';
 const routes: Routes = [
 
   {path:'', redirectTo: 'inicio', pathMatch: 'full'},
-<<<<<<< HEAD
-=======
   {path: 'inicio', component: InicioComponent},
->>>>>>> 5327811ec2172c5721286e0bf3986d93e6a66890
   {path: 'entrar', component: EntrarComponent},
   {path: 'cadastrar', component: CadastrarComponent},
   {path: 'contato', component: ContatoComponent},
