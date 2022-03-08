@@ -12,9 +12,9 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { CategoriaComponent } from './categoria/categoria.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+
 import { ProdutoComponent } from './produto/produto.component';
-import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 
 @NgModule({
@@ -26,10 +26,10 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
     EntrarComponent,
     ContatoComponent,
     InicioComponent,
-    CategoriaComponent,
+    ProdutoDeleteComponent,
     ProdutoComponent,
-    CategoriaEditComponent,
     ProdutoEditComponent,
+
   ],
   imports: [
     BrowserModule,
