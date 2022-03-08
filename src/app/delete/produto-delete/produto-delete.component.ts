@@ -28,11 +28,11 @@ export class ProdutoDeleteComponent implements OnInit {
     }
 
     this.idProduto = this.route.snapshot.params['id']
-    this.findByIdPostagem(this.idProduto)
+    this.findByIdProduto(this.idProduto)
   }
 
-  findByIdPostagem(id: number){
-    this.produtoService.getProdutoById(id).subscribe((resp: Produto) => {
+  findByIdProduto(id: number){
+    this.produtoService.getByIdProduto(id).subscribe((resp: Produto) => {
       this.produto = resp
     })
   }
@@ -40,7 +40,7 @@ export class ProdutoDeleteComponent implements OnInit {
 
   apagar(){
     this.produtoService.deleteProduto(this.idProduto).subscribe(()=>{
-      alert('Postagem apagada com sucesso!')
+      alert('Produto apagado com sucesso!')
       this.router.navigate(['/inicio'])
     })
   }
