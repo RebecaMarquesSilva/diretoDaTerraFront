@@ -34,18 +34,14 @@ export class InicioComponent implements OnInit {
   ngOnInit() {
     window.scroll(0,0)
 
-<<<<<<< HEAD
+
   //   this.authService.refreshToken()
-    this.getAllCategoria()
-=======
 
 
-    
->>>>>>> 5327811ec2172c5721286e0bf3986d93e6a66890
     this.getAllProduto()
   }
 
-  
+
 
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {

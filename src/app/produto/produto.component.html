@@ -1,7 +1,7 @@
 <div class="container-fluid p-0 m-0" id="cor">
   <ul class="nav d-flex justify-content-center mb-4">
     <li class="nav-item">
-      <a class="nav-link" href="">Cadastre uma nova categoria</a>
+      <a class="nav-link" routerLink="/categoria">Cadastre uma nova categoria</a>
     </li>
     <li class="nav-item">
       <a class="nav-link">Cadastre um novo produto</a>
@@ -25,15 +25,9 @@
   </li>
 
   <li class="nav-item">
-    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false">Frutas</a>
+    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false">Produtos por Categoria</a>
   </li>
 
-  <li class="nav-item">
-    <a class="nav-link text-secondary font-weight-bold" >Verduras</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link text-secondary font-weight-bold" >Leguminosas</a>
-  </li>
 </ul>
 <!-- /nav-tab -->
 
@@ -43,6 +37,14 @@
 
   <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
 
+    <!-- <div class="row d-flex justify-content-center mt-4 mb-4">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" name="" id="titulo" placeholder="Digite um titulo de postagem pra pesquisar" [(ngModel)]="tituloPost" (keyup)="findByTituloPostagem()">
+        </div>
+      </div>
+    </div> -->
+
 
   <div class="row row-cols-1 row-cols-md-4">
     <div class="col mb-4">
@@ -51,6 +53,7 @@
         <div class="card-body text-center">
           <h5 class="card-title">{{produto.nome}}</h5>
           <p class="card-text">{{produto.categoria}}</p>
+          <p class="card-text">{{produto.quantidadekg}}</p>
           <p class="card-text">{{produto.preco}}</p>
           <a href="" class="btn btn-primary">Comprar</a>
         </div>
@@ -59,11 +62,44 @@
   </div>
 </div>
 
+
+
+
+
+<div class="tab-pane fade show active" id="produtoCategoria" role="tabpanel" aria-labelledby="nav-produtoCategoria-tab">
+
+
+
+  <!-- <div class="tab-pane fade" id="nav-postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab">
+      <div class="row d-flex justify-content-center mt-4 mb-4">
+        <div class="col-md-4">
+          <div class="form-group">
+            <input type="text" class="form-control" name="" id="titulo" placeholder="Digite tema pra pesquisar" [(ngModel)]="nomeTema" (keyup)="findByNomeTema()">
+          </div>
+        </div>
+      </div>
+-->
+
+
+<div class="row row-cols-1 row-cols-md-4" *ngFor="let categoria of listaCategorias">
+  <div class="col mb-4">
+    <div class="card *ngFor='let produto of listaProdutos'">
+      <img src="{{produto.foto}}" class="card-img-top" alt="img do produto">
+      <div class="card-body text-center">
+        <h5 class="card-title">{{produto.nome}}</h5>
+        <p class="card-text">{{produto.categoria}}</p>
+        <p class="card-text">{{produto.quantidadekg}}</p>
+        <p class="card-text">{{produto.preco}}</p>
+        <a href="" class="btn btn-primary">Comprar</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
 </div>
 <!-- /cards Produtos -->
-
-
-
 
 
 
