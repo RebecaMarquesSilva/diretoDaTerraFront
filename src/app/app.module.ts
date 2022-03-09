@@ -40,16 +40,10 @@ import { SobreComponent } from './sobre/sobre.component';
     ProdutoComponent,
     ProdutoEditComponent,
     CategoriaComponent,
-<<<<<<< HEAD
-    CadastroProdutoComponent,
-    SobreComponent
-  
-=======
     CategoriaEditComponent,
     UsuarioEditComponent,
     CategoriaDeleteComponent,
     CadastroProdutoComponent
->>>>>>> 41eeb522438943f29bec2fe8a53bfe58b93a01b7
   ],
   imports: [
     BrowserModule,
