@@ -45,13 +45,13 @@ getByIdUser(id: number): Observable<Usuario> {
     return ok
   }
 
-  // adm(){
-  //   let ok: boolean =  false
+  adm(){
+    let ok: boolean =  false
 
-  //   if(environment.tipo == 'adm'){
-  //     ok = true
-  //   }
-  //   return ok
-  // }
+    if(environment.tipo == 'adm'){
+      ok = true
+    }
+    return ok
+  }
 
 }
