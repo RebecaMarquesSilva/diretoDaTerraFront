@@ -23,6 +23,7 @@ import { CategoriaComponent } from './categoria/categoria.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 
 
 @NgModule({
@@ -41,6 +42,7 @@ import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.com
     CategoriaEditComponent,
     UsuarioEditComponent,
     CategoriaDeleteComponent,
+    CadastroProdutoComponent
   ],
   imports: [
     BrowserModule,

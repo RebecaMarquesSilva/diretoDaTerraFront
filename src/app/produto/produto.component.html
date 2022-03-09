@@ -6,7 +6,7 @@
 
     </li>
     <li class="nav-item" >
-      <a class="nav-link">Cadastre um novo produto</a>
+      <a class="nav-link" routerLink="/cadastro-produto">Cadastre um novo produto</a>
       <!-- <button class="data-toggle='modal' data-target='#novoProduto'">teste</button> -->
     </li>
   </ul>
@@ -27,7 +27,7 @@
   </li>
 
   <li class="nav-item">
-    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false">Produtos por Categoria</a>
+    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false" routerLink="/contato">Produtos por Categoria</a>
   </li>
 
 </ul>
@@ -57,7 +57,7 @@
           <p class="card-text">{{produto.categoria}}</p>
           <p class="card-text">{{produto.quantidadekg}}</p>
           <p class="card-text">{{produto.preco}}</p>
-          <a href="" class="btn btn-primary">Comprar</a>
+          <a href="" class="btn btn-primary">Entre em Contato</a>
         </div>
       </div>
     </div>
