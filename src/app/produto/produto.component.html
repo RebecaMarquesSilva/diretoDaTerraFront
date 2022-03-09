@@ -1,16 +1,18 @@
+<!-- Cadastro de Produto e Categoria -->
 <div class="container-fluid p-0 m-0" id="cor">
 
   <ul class="nav d-flex justify-content-center mb-4">
     <li class="nav-item">
-      <a class="nav-link" routerLink="/categoria">Cadastre uma nova categoria</a>
 
+      <!-- //*ngIf="authService.adm()"  >>> colocar depois de "<a" nos dois links abaixo p/ liberar acesso apenas p/ adm *** -->
+      <a class="nav-link" routerLink="/categoria">Cadastre uma nova categoria</a>
     </li>
     <li class="nav-item" >
       <a class="nav-link" routerLink="/cadastro-produto">Cadastre um novo produto</a>
-      <!-- <button class="data-toggle='modal' data-target='#novoProduto'">teste</button> -->
     </li>
   </ul>
   </div>
+<!-- /Cadastro de Produto e Categoria -->
 
 
   <div class="row">
@@ -20,21 +22,21 @@
   </div>
 
 
-<!-- nav-tab -->
+<!-- Nav-Produtos -->
 <ul class="nav nav-tabs d-flex justify-content-center my-5" >
   <li class="nav-item">
     <a class="nav-link active text-secondary font-weight-bold" id="nav-todosProdutos-tab" data-toggle="tab" href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os produtos</a>
   </li>
 
   <li class="nav-item">
-    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false" routerLink="/contato">Produtos por Categoria</a>
+    <a class="nav-link text-secondary font-weight-bold" id="nav-produtoCategoria-tab" data-toggle="tab" href="#produtoCategoria" role="tab" aria-controls="nav-produtoCategoria" aria-selected="false">Produtos por Categoria</a>
   </li>
 
 </ul>
-<!-- /nav-tab -->
+<!-- /nav-produtos -->
 
 
-<!-- cards Produtos -->
+<!-- Cards Produtos -->
 <div class="container">
 
   <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
