@@ -20,8 +20,12 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 
 
 import { CategoriaComponent } from './categoria/categoria.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { SobreComponent } from './sobre/sobre.component';
+
 
 @NgModule({
   declarations: [
@@ -36,9 +40,16 @@ import { SobreComponent } from './sobre/sobre.component';
     ProdutoComponent,
     ProdutoEditComponent,
     CategoriaComponent,
+<<<<<<< HEAD
     CadastroProdutoComponent,
     SobreComponent
   
+=======
+    CategoriaEditComponent,
+    UsuarioEditComponent,
+    CategoriaDeleteComponent,
+    CadastroProdutoComponent
+>>>>>>> 41eeb522438943f29bec2fe8a53bfe58b93a01b7
   ],
   imports: [
     BrowserModule,
