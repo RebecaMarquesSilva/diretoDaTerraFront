@@ -17,8 +17,6 @@ import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.c
 import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
 
-
-
 import { CategoriaComponent } from './categoria/categoria.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
@@ -40,17 +38,14 @@ import { SobreComponent } from './sobre/sobre.component';
     ProdutoComponent,
     ProdutoEditComponent,
     CategoriaComponent,
-<<<<<<< HEAD
     CadastroProdutoComponent,
-    SobreComponent
-  
-=======
+    SobreComponent,
     CategoriaEditComponent,
     UsuarioEditComponent,
     CategoriaDeleteComponent,
     CadastroProdutoComponent
->>>>>>> 41eeb522438943f29bec2fe8a53bfe58b93a01b7
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
