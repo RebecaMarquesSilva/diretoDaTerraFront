@@ -21,6 +21,7 @@ import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component
 
 import { CategoriaComponent } from './categoria/categoria.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
     ProdutoComponent,
     ProdutoEditComponent,
     CategoriaComponent,
-    CadastroProdutoComponent
+    CadastroProdutoComponent,
+    SobreComponent
   
   ],
   imports: [
