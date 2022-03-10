@@ -1,7 +1,7 @@
 
 #cor
 {
-  background-color: transparent;
+  background-color: #8cac7b ;
 }
 
 .imgLogo {
@@ -25,7 +25,6 @@ a:hover {
 
 .text-g:hover{
   opacity: 0.3;
-  color:black
 }
 
 .logindrop{
