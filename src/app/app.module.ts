@@ -23,6 +23,7 @@ import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-de
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { SobreComponent } from './sobre/sobre.component';
     CategoriaEditComponent,
     UsuarioEditComponent,
     CategoriaDeleteComponent,
-    CadastroProdutoComponent
+    CadastroProdutoComponent,
+    DetalheProdutoComponent
   ],
 
   imports: [
