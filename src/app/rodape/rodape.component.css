@@ -43,16 +43,7 @@
   text-decoration: none;
 }
 
-#myFooter .github:hover {
-  color: #333333  ;
-}
-
-#myFooter .linkedin:hover {
-  color: rgb(245, 237, 245);
-  
-}
-
 .imgLogo {
   width: 237px;
-  height: 46px;
+  height: 55px;
 }
