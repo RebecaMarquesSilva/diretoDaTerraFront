@@ -38,11 +38,6 @@ import { SobreComponent } from './sobre/sobre.component';
     ProdutoComponent,
     ProdutoEditComponent,
     CategoriaComponent,
-<<<<<<< HEAD
-    CadastroProdutoComponent,
-    SobreComponent,
-=======
->>>>>>> 5a12736c32149975e00b272da35925eedf5239d8
     CategoriaEditComponent,
     UsuarioEditComponent,
     CategoriaDeleteComponent,
