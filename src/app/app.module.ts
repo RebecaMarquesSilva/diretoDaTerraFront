@@ -45,7 +45,8 @@ import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.compo
     UsuarioEditComponent,
     CategoriaDeleteComponent,
     CadastroProdutoComponent,
-    DetalheProdutoComponent
+    DetalheProdutoComponent,
+    SobreComponent,
   ],
 
   imports: [
