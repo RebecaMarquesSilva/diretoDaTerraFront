@@ -12,15 +12,17 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 
 import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
-import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
+
 import { CategoriaComponent } from './categoria/categoria.component';
-import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
-import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { SobreComponent } from './sobre/sobre.component';
 import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.component';
 
 
@@ -33,16 +35,17 @@ import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.compo
     EntrarComponent,
     ContatoComponent,
     InicioComponent,
+    ProdutoDeleteComponent,
     ProdutoComponent,
     ProdutoEditComponent,
-    ProdutoDeleteComponent,
     CategoriaComponent,
     CategoriaEditComponent,
-    CategoriaDeleteComponent,
     UsuarioEditComponent,
+    CategoriaDeleteComponent,
     CadastroProdutoComponent,
     DetalheProdutoComponent
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,

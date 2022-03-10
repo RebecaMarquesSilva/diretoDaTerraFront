@@ -13,6 +13,7 @@ import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component
 import { EntrarComponent } from './entrar/entrar.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { ProdutoComponent } from './produto/produto.component';
+import { SobreComponent } from './sobre/sobre.component';
 
 const routes: Routes = [
 
@@ -31,7 +32,9 @@ const routes: Routes = [
   {path: 'categoria-delete/:id', component: CategoriaDeleteComponent},
   {path: 'produto-edit/:id', component: ProdutoEditComponent},
   {path: 'produto-delete/:id', component: ProdutoDeleteComponent},
-  {path: 'usuario-edit/:id', component: UsuarioEditComponent},
+  // {path: 'user-edit/:id', component: UserEditComponent},
+  {path: 'cadastro-produto', component: CadastroProdutoComponent},
+  {path: 'sobre', component: SobreComponent}
 
 ];
 
