@@ -1,5 +1,5 @@
 <!-- Cadastro de Produto e Categoria -->
-<div class="container-fluid p-0 m-0 corVerdeId d-flex justify-content-center">
+<div class="container-fluid p-0 m-0 corNavCadastro d-flex justify-content-center">
 
   <!-- //*ngIf="authService.adm()"  >>> colocar depois de "<a" nos dois links abaixo p/ liberar acesso apenas p/ adm *** -->
 
@@ -11,7 +11,7 @@
 
   <div class="row">
     <div class="col-md-12">
-      <h1 class="text-center text-success fs-50 my-4">Conheça nossos produtos</h1>
+      <h1 class="text-center corLetra fs-50 my-4">Conheça nossos produtos</h1>
     </div>
   </div>
 
@@ -38,7 +38,7 @@
     <!-- <div class="row d-flex justify-content-center mt-4 mb-4">
       <div class="col-md-4">
         <div class="form-group">
-          <input type="text" class="form-control" name="" id="titulo" placeholder="Digite um titulo de postagem pra pesquisar" [(ngModel)]="tituloPost" (keyup)="findByTituloPostagem()">
+          <input type="text" class="form-control" name="" id="nome" placeholder="Digite o nome do produto que deseja pesquisar" [(ngModel)]="tituloPost" (keyup)="findByTituloPostagem()">
         </div>
       </div>
     </div> -->
@@ -47,10 +47,10 @@
     <div class="row row-cols-1 row-cols-md-4">
       <div class="col mb-4">
         <div class="card" *ngFor='let produto of listaProdutos'>
-          <img src="{{produto.foto}}" class="card-img-top" alt="img do produto">
+          <img src="{{produto.foto}}" class="card-img-top" alt="img do produto" [routerLink]="['/detalhe-produto', produto.id]">
           <div class="card-body text-center">
             <h5 class="card-title">{{produto.nome}}</h5>
-            <p class="card-text">{{produto.categoria.descricao}}</p>
+            <p class="card-text">{{produto.categoria.categoria}}</p>
             <p class="card-text">{{produto.quantidadekg}}</p>
             <p class="card-text">{{produto.preco}}</p>
             <a href="" class="btn corBotao text-white mr-2" [routerLink]="['/detalhe-produto', produto.id]">Detalhes</a>
@@ -66,38 +66,57 @@
 
 
 
-<div class="tab-pane fade show active" id="produtoCategoria" role="tabpanel" aria-labelledby="nav-produtoCategoria-tab">
+<!-- card antigo -->
+  <!-- <div class="tab-pane fade show active" id="produtoCategoria" role="tabpanel" aria-labelledby="nav-produtoCategoria-tab"> -->
 
+    <!-- <div class="row d-flex justify-content-center mt-4 mb-4">
+      <div class="col-md-4">
+        <div class="form-group">
+          <input type="text" class="form-control" name="" id="titulo" placeholder="Digite um titulo de postagem pra pesquisar" [(ngModel)]="tituloPost" (keyup)="findByTituloPostagem()">
+        </div>
+      </div>
+    </div> -->
 
-
-  <!-- <div class="tab-pane fade" id="nav-postagensTema" role="tabpanel" aria-labelledby="nav-postagensTema-tab">
-      <div class="row d-flex justify-content-center mt-4 mb-4">
-        <div class="col-md-4">
-          <div class="form-group">
-            <input type="text" class="form-control" name="" id="titulo" placeholder="Digite tema pra pesquisar" [(ngModel)]="nomeTema" (keyup)="findByNomeTema()">
+<!--
+    <div class="row row-cols-1 row-cols-md-4" *ngFor="let categoria of listaCategorias">
+      <div class="col mb-4">
+        <div class="card *ngFor='let produto of categoria.produto'">
+          <img src="{{produto.foto}}" class="card-img-top" alt="img do produto" [routerLink]="['/detalhe-produto', produto.id]">
+          <div class="card-body text-center">
+            <h5 class="card-title">{{produto.nome}}</h5>
+            <p class="card-text">{{produto.categoria}}</p>
+            <p class="card-text">{{produto.quantidadekg}}</p>
+            <p class="card-text">{{produto.preco}}</p>
+            <a href="" class="btn corBotao text-white mr-2" [routerLink]="['/detalhe-produto', produto.id]">Detalhes</a>
+            <a href="" class="btn corBotao text-white" routerLink="/contato">Entre em Contato</a>
           </div>
         </div>
       </div>
+    </div>
+    </div>
 -->
+ <!-- /card antigo -->
 
 
-<div class="row row-cols-1 row-cols-md-4" *ngFor="let categoria of listaCategorias">
-  <div class="col mb-4">
-    <div class="card *ngFor='let produto of listaProdutos'">
-      <img src="{{produto.foto}}" class="card-img-top" alt="img do produto">
-      <div class="card-body text-center">
-        <h5 class="card-title">{{produto.nome}}</h5>
-        <p class="card-text">{{produto.categoria}}</p>
-        <p class="card-text">{{produto.quantidadekg}}</p>
-        <p class="card-text">{{produto.preco}}</p>
-        <a href="" class="btn corBotao text-white mr-2" [routerLink]="['/detalhe-produto', produto.id]">Detalhes</a>
-        <a href="" class="btn corBotao text-white" routerLink="/contato">Entre em Contato</a>
+
+<div class="tab-pane fade" id="produtoCategoria" role="tabpanel" aria-labelledby="nav-produtoCategoria-tab">
+
+  <div class="card-columns" *ngFor="let categoria of listaCategorias">
+    <div class="card text-center" *ngFor='let item of categoria.produto'>
+      <div class="card-body">
+        <img src="{{item.foto}}" class="card-img-top" alt="img do produto" [routerLink]="['/detalhe-produto', produto.id]">
+          <div class="card-body text-center">
+            <h5 class="card-title m-0">{{item.nome}}</h5>
+            <p class="card-text mt-3">{{item.categoria}}</p>
+            <p class="card-text mt-3">{{item.quantidadekg}}</p>
+            <p class="card-text mt-3">{{item.preco}}</p>
       </div>
     </div>
   </div>
 </div>
-</div>
 
 
-</div>
-<!-- /cards Produtos -->
+
+
+  </div>
+
