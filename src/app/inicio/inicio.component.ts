@@ -36,35 +36,34 @@ export class InicioComponent implements OnInit {
 
   //   this.authService.refreshToken()
 
-    this.getAllProduto()
   }
 
 
 
-  findByIdCategoria() {
-    this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
-      this.categoria = resp
-    })
-  }
+  // findByIdCategoria() {
+  //   this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
+  //     this.categoria = resp
+  //   })
+  // }
 
-  getAllProduto() {
-    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
-      this.listaProdutos = resp
-    })
-  }
+  // getAllProduto() {
+  //   this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
+  //     this.listaProdutos = resp
+  //   })
+  // }
 
-  publicar() {
-    this.categoria.id = this.idCategoria
-    this.produto.categoria = this.categoria
+  // publicar() {
+  //   this.categoria.id = this.idCategoria
+  //   this.produto.categoria = this.categoria
 
-    // this.user.id = this.idUser
-    // this.produto.usuario = this.user
+  //   // this.user.id = this.idUser
+  //   // this.produto.usuario = this.user
 
-    this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
-      this.produto = resp
-      this.produto = new Produto()
-      this.getAllProduto()
-    })
-  }
+  //   this.produtoService.postProduto(this.produto).subscribe((resp: Produto) => {
+  //     this.produto = resp
+  //     this.produto = new Produto()
+  //     this.getAllProduto()
+  //   })
+  // }
 
 }

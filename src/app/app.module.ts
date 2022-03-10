@@ -12,18 +12,16 @@ import { RodapeComponent } from './rodape/rodape.component';
 import { EntrarComponent } from './entrar/entrar.component';
 import { ContatoComponent } from './contato/contato.component';
 import { InicioComponent } from './inicio/inicio.component';
-import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 
 import { ProdutoComponent } from './produto/produto.component';
 import { ProdutoEditComponent } from './edit/produto-edit/produto-edit.component';
-
-
-
+import { ProdutoDeleteComponent } from './delete/produto-delete/produto-delete.component';
 import { CategoriaComponent } from './categoria/categoria.component';
-import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
-import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
 import { CategoriaEditComponent } from './edit/categoria-edit/categoria-edit.component';
+import { CategoriaDeleteComponent } from './delete/categoria-delete/categoria-delete.component';
+import { UsuarioEditComponent } from './edit/usuario-edit/usuario-edit.component';
 import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.component';
+import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.component';
 
 
 @NgModule({
@@ -35,14 +33,15 @@ import { CadastroProdutoComponent } from './cadastro-produto/cadastro-produto.co
     EntrarComponent,
     ContatoComponent,
     InicioComponent,
-    ProdutoDeleteComponent,
     ProdutoComponent,
     ProdutoEditComponent,
+    ProdutoDeleteComponent,
     CategoriaComponent,
     CategoriaEditComponent,
-    UsuarioEditComponent,
     CategoriaDeleteComponent,
-    CadastroProdutoComponent
+    UsuarioEditComponent,
+    CadastroProdutoComponent,
+    DetalheProdutoComponent
   ],
   imports: [
     BrowserModule,
