@@ -39,6 +39,8 @@ import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.compo
     ProdutoComponent,
     ProdutoEditComponent,
     CategoriaComponent,
+    CadastroProdutoComponent,
+    SobreComponent,
     CategoriaEditComponent,
     UsuarioEditComponent,
     CategoriaDeleteComponent,
