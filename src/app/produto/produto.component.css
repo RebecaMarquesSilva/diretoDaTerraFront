@@ -11,10 +11,8 @@
   background-color: #6d8b5aea;
 }
 
-.img{
-  height: 10vw;
+.imgTamanho{
+  height: 50px;
+  width: 50px;
 }
 
-.button{
-  height: 20%;
-}
