@@ -40,18 +40,25 @@ export class ProdutoComponent implements OnInit {
   //   this.authService.refreshToken()
   this.produtoService.refreshToken()
     this.getAllProduto()
+    this.getAllCategorias()
+  }
+
+    getAllProduto() {
+    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
+      this.listaProdutos = resp
+      console.log(this.listaProdutos)
+    })
+  }
+
+  getAllCategorias() {
+    this.categoriaService.getAllCategoria().subscribe((resp: Categoria[]) => {
+      this.listaCategorias = resp
+    })
   }
 
   findByIdCategoria() {
     this.categoriaService.getByIdCategoria(this.idCategoria).subscribe((resp: Categoria) => {
       this.categoria = resp
-    })
-  }
-
-  getAllProduto() {
-    this.produtoService.getAllProduto().subscribe((resp: Produto[]) => {
-      this.listaProdutos = resp
-      console.log(this.listaProdutos)
     })
   }
 
