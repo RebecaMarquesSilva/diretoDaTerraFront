@@ -17,6 +17,7 @@ export class ProdutoComponent implements OnInit {
 
   produto: Produto = new Produto()
   listaProdutos: Produto[]
+  nomeProduto: string
 
   categoria: Categoria = new Categoria()
   listaCategorias: Categoria[]
@@ -75,6 +76,17 @@ export class ProdutoComponent implements OnInit {
       this.produto = new Produto()
       this.getAllProduto()
     })
+  }
+
+  findByNomeProduto() {
+
+    if(this.nomeProduto == '') {
+      this.getAllProduto()
+    } else {
+      this.produtoService.getByNomeProduto(this.nomeProduto). subscribe((resp: Produto[]) => {
+        this.listaProdutos = resp
+      })
+    }
   }
 
 }
