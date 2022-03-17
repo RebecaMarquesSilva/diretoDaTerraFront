@@ -4,20 +4,23 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('https://img.freepik.com/fotos-gratis/plantio-de-mudas-jovem-planta-na-luz-da-manha-no-fundo-da-natureza_34998-98.jpg');
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+.imgback img {
+    object-fit: cover;
+    width: 100vw;
+    height: 120vh;
+    margin-top: -20vh;
+  }
+  
+  .imgback {
+    z-index: -10 !important;
+    position: absolute;   
+  }
 
 h2 {
-    font-size: 35px;
+    font-size: 25px;
     color: #8fbc8f;
     text-align: center;
-    margin: 20px;
+    margin: 15px;
 }
 
 .container {
@@ -26,6 +29,8 @@ h2 {
     border-radius: 3%;
     box-shadow: 2px 3px 20px #000, 3px 6px 15px #000;
     padding: 42px 20px;
+    display: flex;
+    justify-content: center;
 }
 
 input {
@@ -38,6 +43,8 @@ input {
     color: #fff;
     transition: .25s ease-in-out;
     cursor: alias;
+    display: flex;
+    justify-content: left;
 }
 
 .input-field {
