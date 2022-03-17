@@ -1,5 +1,12 @@
-<!-- *Cadastro de Produto e Categoria -->
-<div class="container-fluid p-0 m-0 corNavCadastro d-flex justify-content-center">
+<!-- Imagem de fundo -->
+<div class="imgbelo">
+  <img src="https://img.freepik.com/fotos-gratis/plantio-de-mudas-jovem-planta-na-luz-da-manha-no-fundo-da-natureza_34998-98.jpg" alt="">
+</div>
+<!-- /Imagem de fundo -->
+
+<!-- Cadastro de Produto e Categoria -->
+<hr>
+<div class="container-fluid p-0 m-0 d-flex justify-content-center">
 
   <!-- //*ngIf="authService.adm()"  >>> colocar depois de "<a" nos dois links abaixo p/ liberar acesso apenas p/ adm *** -->
 
@@ -12,9 +19,9 @@
 <!--!Título-->
 <div class="container-fluid p-0 m-0">
   <div class="row align-items-center m-1">
-    <div class="col-md-12 mt-1">
+    <div class="col-md-12 ">
       <hr>
-      <h2 class="text d-flex justify-content-center fonte fs-30 corLetra ">CONHEÇA NOSSOS PRODUTOS</h2>
+      <h2 class="text d-flex justify-content-center text fs-30 corLetra ">Conheça nossos produtos</h2>
       <hr>
     </div>
   </div>
@@ -22,7 +29,7 @@
 <!--!/Título-->
 
 <!-- *Nav-Produtos -->
-<ul class="nav nav-tabs d-flex justify-content-center my-4" >
+<ul class="nav nav-tabs d-flex justify-content-center my-4" *ngIf="authService.adm()">
   <li class="nav-item">
     <a class="nav-link active text-secondary font-weight-bold" id="nav-todosProdutos-tab" data-toggle="tab" href="#todosProdutos" role="tab" aria-controls="nav-todosProdutos" aria-selected="true">Todos os produtos</a>
   </li>
@@ -40,7 +47,7 @@
   <div class="tab-pane fade show active" id="todosProdutos" role="tabpanel" aria-labelledby="nav-todosProdutos-tab">
 
 <!-- !Pesquisa -->
-<div class="row d-flex justify-content-center my-5">
+<div class="row d-flex justify-content-center mt-2 mb-3">
   <div class="col-md-4">
     <div class="form-group">
       <input type="text" class="form-control" id="nome" placeholder="Digite o nome do produto desejado" [(ngModel)]="nomeProduto" (keyup)="findByNomeProduto()">
