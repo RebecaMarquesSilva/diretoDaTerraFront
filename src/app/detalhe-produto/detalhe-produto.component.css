@@ -55,3 +55,7 @@ button:hover {
     width: 26vw;
     margin-left: 10vw;
   }
+
+.tamanhoMinCard {
+  min-width: 140px;
+}

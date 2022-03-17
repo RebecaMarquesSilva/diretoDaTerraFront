@@ -10,9 +10,10 @@ export class ContatoComponent implements OnInit {
   constructor() { }
 
   ngOnInit(){
+    window.scroll(0,0)
   }
 
   enviar(){
-    alert('futuramente iremos implementar no backend para o email ser enviado')
+    alert('Futuramente iremos implementar no back-end para o e-mail ser enviado')
   }
 }

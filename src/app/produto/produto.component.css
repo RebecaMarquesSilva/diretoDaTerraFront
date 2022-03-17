@@ -12,7 +12,30 @@
 }
 
 .imgTamanho{
-  height: 50px;
-  width: 50px;
+
+  width: 500px;
 }
 
+.cardHover{
+  transition: transform 0.5s
+}
+
+.cardHover:hover{
+  -webkit-box-shadow: 0px 1px 16px 2px rgba(3,3,3,0.75);
+  -moz-box-shadow: 0px 1px 16px 2px rgba(3,3,3,0.75);
+  box-shadow: 0px 1px 16px 2px rgba(3,3,3,0.75);
+  transition: 0.5s;
+  transform: translateY(-5px);
+}
+
+.tamanhoCard {
+  max-width: 55%;
+}
+
+.fonte {
+  font-family: 'Chau Philomene One', sans-serif;
+}
+
+.opcao {
+  visibility: hidden;
+}

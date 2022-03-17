@@ -65,7 +65,7 @@ export class ProdutoEditComponent implements OnInit {
     this.produtoService.putProduto(this.produto).subscribe((resp: Produto) => {
       this.produto = resp
       alert('Produto atualizado com sucesso!')
-      this.router.navigate(['/inicio'])
+      this.router.navigate(['/produto'])
     })
   }
 
