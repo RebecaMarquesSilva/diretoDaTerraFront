@@ -11,11 +11,6 @@
   background-color: #6d8b5aea;
 }
 
-.imgTamanho{
-
-  width: 500px;
-}
-
 .cardHover{
   transition: transform 0.5s
 }
@@ -28,14 +23,6 @@
   transform: translateY(-5px);
 }
 
-.tamanhoCard {
-  max-width: 55%;
-}
-
 .fonte {
   font-family: 'Chau Philomene One', sans-serif;
-}
-
-.opcao {
-  visibility: hidden;
 }

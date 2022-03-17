@@ -28,6 +28,7 @@ import { DetalheProdutoComponent } from './detalhe-produto/detalhe-produto.compo
 import { AlertasComponent } from './alertas/alertas.component';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -57,7 +58,7 @@ import { AlertasComponent } from './alertas/alertas.component';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
   ],
   providers: [{
     provide: LocationStrategy,
