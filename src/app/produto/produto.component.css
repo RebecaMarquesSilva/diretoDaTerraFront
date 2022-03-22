@@ -1,7 +1,7 @@
 .imgbelo img {
   object-fit: cover;
     width: 100vw;
-    height: 350vh;
+    height: 340vh;
     margin-top: -20vh;
 }
 
@@ -33,10 +33,6 @@
   box-shadow: 0px 0px 9px 7px rgba(0,0,0,0.75);
   transition: 0.5s;
   transform: translateY(-5px);
-}
-
-.fonte {
-  font-family: 'Chau Philomene One', sans-serif;
 }
 
 .text{
