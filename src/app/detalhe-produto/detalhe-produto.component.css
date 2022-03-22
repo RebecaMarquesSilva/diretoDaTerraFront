@@ -1,7 +1,7 @@
 .imgbelo img {
   object-fit: cover;
     width: 100vw;
-    height: 130vh;
+    height: 140vh;
     margin-top: -20vh;
 }
 
@@ -72,4 +72,8 @@ button:hover {
   text-transform: uppercase;
   font-weight: 900;
   color:hsla(135, 91%, 34%, 0.548) ;
+}
+
+.borda {
+  border-radius: 10px;
 }
